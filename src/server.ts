@@ -1,5 +1,5 @@
-import App from "./app.ts";
-import emitter from "./config/eventEmitter-config.ts";
+import App from "./app.js";
+import emitter from "./config/eventEmitter-config.js";
 
 const PORT = process.env.PORT || 3000;
 const app = App.app;

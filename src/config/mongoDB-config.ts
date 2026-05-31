@@ -1,6 +1,6 @@
 import { configDotenv } from "dotenv";
 import mongoose from "mongoose";
-import emitter from "./eventEmitter-config.ts";
+import emitter from "./eventEmitter-config.js";
 
 configDotenv();
 

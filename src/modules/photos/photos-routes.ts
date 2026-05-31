@@ -1,8 +1,8 @@
 import { Router } from "express";
 
-import controller from "./photos-controller.ts";
-import { uploadMiddleware } from "./middlewares/index.ts";
-import { uploadRateLimit } from "../shared/middlewares/rateLimit.ts";
+import controller from "./photos-controller.js";
+import { uploadMiddleware } from "./middlewares/index.js";
+import { uploadRateLimit } from "../shared/middlewares/rateLimit.js";
 
 const routes = Router();
 

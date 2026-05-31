@@ -1,4 +1,4 @@
-import { AppError } from "./appErrors.ts";
+import { AppError } from "./appErrors.js";
 
 /**
  * Handler base para erros de integrações externas (UAU, Meta, Cloudinary, etc.).

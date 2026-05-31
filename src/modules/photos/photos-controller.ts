@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import service from "./photos-service.ts";
-import { ResolveError } from "../../shared/utils/resolveError.ts";
+import service from "./photos-service.js";
+import { ResolveError } from "../../shared/utils/resolveError.js";
 
 class PhotosController {
   upload = async (req: Request, res: Response) => {

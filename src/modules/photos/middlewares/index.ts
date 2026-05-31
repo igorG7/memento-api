@@ -1,1 +1,1 @@
-export * from "./uploadPhotos-middlewares.ts";
+export * from "./uploadPhotos-middlewares.js";

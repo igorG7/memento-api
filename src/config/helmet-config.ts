@@ -1,6 +1,6 @@
 import helmet from "helmet";
 import { configDotenv } from "dotenv";
-import { isProduction } from "./production-config.ts";
+import { isProduction } from "./production-config.js";
 
 configDotenv();
 

@@ -1,8 +1,8 @@
 import { Router } from "express";
 
-import { launchError } from "./shared/middlewares/globalError-middleware.ts";
+import { launchError } from "./shared/middlewares/globalError-middleware.js";
 
-import photosRoutes from "./modules/photos/photos-routes.ts";
+import photosRoutes from "./modules/photos/photos-routes.js";
 
 const routes = Router();
 

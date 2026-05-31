@@ -1,6 +1,6 @@
-import { AppError } from "./appErrors.ts";
-import DatabaseError from "./handleDataBaseError.ts";
-import IntegrationError from "./handleIntegrationError.ts";
+import { AppError } from "./appErrors.js";
+import DatabaseError from "./handleDataBaseError.js";
+import IntegrationError from "./handleIntegrationError.js";
 
 export class ResolveError {
   static resolve(error: Error) {

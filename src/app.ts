@@ -1,9 +1,9 @@
 import express, { type Application } from "express";
 import cors from "cors";
 
-import MongoDB from "./config/mongoDB-config.ts";
-import helmet from "./config/helmet-config.ts";
-import routes from "./routes.ts";
+import MongoDB from "./config/mongoDB-config.js";
+import helmet from "./config/helmet-config.js";
+import routes from "./routes.js";
 
 class App {
   public app: Application;

@@ -35,7 +35,7 @@
 // export default new CloudinaryService();
 
 import { Readable } from "stream";
-import cloudinary from "../../config/cloudinary.ts";
+import cloudinary from "../../config/cloudinary.js";
 import type { UploadApiResponse, UploadApiErrorResponse } from "cloudinary";
 
 // 1. Defina uma interface para o retorno da sua função

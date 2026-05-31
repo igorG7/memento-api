@@ -4,7 +4,7 @@ import {
   type IPhoto,
   PHOTO_CATEGORY,
   PHOTOS_STATUS,
-} from "../domain/photo-interface.ts";
+} from "../domain/photo-interface.js";
 
 export interface IPhotoDocument extends Omit<IPhoto, "_id" | "eventId">, Document {
   eventId: string;

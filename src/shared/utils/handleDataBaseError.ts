@@ -1,4 +1,4 @@
-import { DatabaseException } from "./appErrors.ts";
+import { DatabaseException } from "./appErrors.js";
 
 export default class DataBaseError {
   static handle = (error: any): DatabaseException => {

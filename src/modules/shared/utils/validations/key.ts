@@ -1,5 +1,5 @@
-import { BadRequest } from "../../../../shared/utils/appErrors.ts";
-import { verifyMinEntry } from "./minEntry.ts";
+import { BadRequest } from "../../../../shared/utils/appErrors.js";
+import { verifyMinEntry } from "./minEntry.js";
 
 export class Key {
   static normalize(validators: any, filter: any) {

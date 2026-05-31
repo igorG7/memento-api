@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from "express";
-import { isProduction } from "../../config/production-config.ts";
+import { isProduction } from "../../config/production-config.js";
 
 interface HttpError extends Error {
   statusCode: number;

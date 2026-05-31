@@ -1,6 +1,6 @@
 import type { Request, Response, NextFunction } from "express";
 import { Types } from "mongoose";
-import { BadRequest } from "../../../shared/utils/appErrors.ts";
+import { BadRequest } from "../../../shared/utils/appErrors.js";
 
 export const validateId = (req: Request, res: Response, next: NextFunction) => {
   const id = req.params.id as string;

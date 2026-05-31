@@ -1,4 +1,4 @@
-import { BadRequest } from "../../../../shared/utils/appErrors.ts";
+import { BadRequest } from "../../../../shared/utils/appErrors.js";
 
 export const verifyMinEntry = (data: any) => {
   const keys = Object.keys(data);

@@ -1,5 +1,5 @@
-import cloudinaryService from "../../integrations/cloudinary/service-cloudinary.ts";
-import Photo from "./infrastructure/photo.ts";
+import cloudinaryService from "../../integrations/cloudinary/service-cloudinary.js";
+import Photo from "./infrastructure/photo.js";
 
 class PhotoService {
   upload = async (files: any, data: any) => {
