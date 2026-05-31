@@ -21,7 +21,13 @@ class App {
 
   private middlewares() {
     this.app.use(helmet);
-    this.app.use(cors());
+    this.app.use(
+      cors({
+        origin: process.env.CORS_ORIGIN || "*",
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        allowedHeaders: ["Content-Type", "Authorization"],
+      }),
+    );
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
   }

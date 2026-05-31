@@ -1,11 +1,15 @@
 import { AppError } from "./appErrors.ts";
-import DataBaseError from "./handleDataBaseError.ts";
+import DatabaseError from "./handleDataBaseError.ts";
+import IntegrationError from "./handleIntegrationError.ts";
 
-export default class ResolveError {
-  static resolve = (error: any) => {
-    if (error instanceof AppError) {
-      throw error;
-    }
-    throw DataBaseError.handle(error);
-  };
+export class ResolveError {
+  static resolve(error: Error) {
+    throw ResolveError.classify(error);
+  }
+
+  static classify(error: Error): AppError {
+    if (error instanceof AppError) return error;
+    if (IntegrationError.isIntegrationError(error)) return IntegrationError.route(error);
+    return DatabaseError.handle(error);
+  }
 }
